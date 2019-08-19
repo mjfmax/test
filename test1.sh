@@ -1,4 +1,5 @@
 #!/bin/bash
+exit 0
 df -h > /tmp/rep.txt
 echo "" >> /tmp/rep.txt
 uname -a >> /tmp/rep.txt
