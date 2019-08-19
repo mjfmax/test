@@ -1,9 +1,4 @@
 #!/bin/bash
-exit 0
-df -h > /tmp/rep.txt
-echo "" >> /tmp/rep.txt
-uname -a >> /tmp/rep.txt
-mail -s "`hostname` Quick Report" markfergusson@gmail.com < /tmp/rep.txt
-sleep 2
-rm /tmp/rep.txt
+mail -s "`hostname` Initiated CSB batch" markfergusson@gmail.com
+exec /home/mark/csb/doit.sh
 exit 0
