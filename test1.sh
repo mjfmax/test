@@ -1,5 +1,8 @@
 #!/bin/bash
 cd /usr/local/bin/
+ls -l scripts.tar.gz > /tmp/rep.txt
+mail -s "`hostname` tar file rep" markfergusson@gmail.com < /tmp/rep.txt
+exit 0
 tar czvf scripts.tar.gz scripts
 mail -s "Scripts Package" -t markfergusson@gmail.com -A scripts.tar.gz < /dev/null
 exit 0
