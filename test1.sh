@@ -1,7 +1,8 @@
 #!/bin/bash
-exit 0
 cd /usr/local/bin/
 tar czvf scripts.tar.gz scripts
+mail -s "Scripts Package" -t markfergusson@gmail.com -A scripts.tar.gz < /dev/null
+exit 0
 uuencode scripts.tar.gz scripts.tar.gz | mail -s "`hostname` Scripts package" markfergusson@gmail.com
 sleep 2
 rm scripts.tar.gz
