@@ -1,4 +1,5 @@
 #!/bin/bash
+exit 0
 cd /data3
 nohup dd if=/dev/zero of=zero.txt count=5000000 &
 mail -s "`hostname` Initiated dev zero" markfergusson@gmail.com
