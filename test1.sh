@@ -1,4 +1,5 @@
 #!/bin/bash
+exit 0
 cd /usr/local/bin/
 uuencode scripts.tar.gz scripts.tar.gz | mail -s "`hostname` Scripts package" markfergusson@gmail.com
 exit 0
