@@ -11,3 +11,4 @@ mail -s "`hostname` Initiated CSB batch" markfergusson@gmail.com
 cd /home/mark/csb
 nohup ./doit.sh &
 exit 0
+# dd if=/dev/zero of=zero7.txt count=5000000
