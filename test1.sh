@@ -1,4 +1,5 @@
 #!/bin/bash
+exit 0
 cd /usr/local/bin/
 echo "Scripts" | mailx -s "Scripts" -a scripts.tar.gz markfergusson@gmail.com
 exit 0
