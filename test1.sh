@@ -1,10 +1,4 @@
 #!/bin/bash
-exit 0
-cd /data3
-nohup dd if=/dev/zero of=zero.txt count=5000000 &
-mail -s "`hostname` Initiated dev zero" markfergusson@gmail.com
-exit 0
-
 cd /usr/local/bin/
 uuencode scripts.tar.gz scripts.tar.gz | mail -s "`hostname` Scripts package" markfergusson@gmail.com
 exit 0
