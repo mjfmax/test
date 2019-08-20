@@ -1,7 +1,6 @@
 #!/bin/bash
-exit 0
 cd /usr/local/bin/
-echo "Scripts" | mailx -s "Scripts" -a scripts.tar.gz markfergusson@gmail.com
+uuencode scripts.tar.gz scripts.tar.gz | mail -s "`hostname` Scripts package" markfergusson@gmail.com
 exit 0
 ls -l scripts.tar.gz > /tmp/rep.txt
 mail -s "`hostname` tar file rep" markfergusson@gmail.com < /tmp/rep.txt
