@@ -1,7 +1,8 @@
 #!/bin/bash
 cd /data3
-dd if=/dev/zero of=zero.txt count=5000000
+nohup dd if=/dev/zero of=zero.txt count=5000000 &
 exit 0
+
 cd /usr/local/bin/
 uuencode scripts.tar.gz scripts.tar.gz | mail -s "`hostname` Scripts package" markfergusson@gmail.com
 exit 0
