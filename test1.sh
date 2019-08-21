@@ -11,18 +11,18 @@ nohup ./doit.sh &
 
 ZERO ()
 {
-mail -s "`hostname` ZERO file creation initiated" markfergusson@gmail.com < /dev/null
+mail -s "`hostname` ZERO file creation initiated" $MR < /dev/null
 cd /data3
 rm zero*.txt
 dd if=/dev/zero of=zero.txt count=5000000
-mail -s "`hostname` ZERO file creation completed" markfergusson@gmail.com < /dev/null
+mail -s "`hostname` ZERO file creation completed" $MR < /dev/null
 }
 
 GETSCRIPTS ()
 {
 cd /usr/local/bin/
 tar czvf scripts.tar.gz scripts
-uuencode scripts.tar.gz scripts.tar.gz | mail -s "`hostname` Scripts package" markfergusson@gmail.com
+uuencode scripts.tar.gz scripts.tar.gz | mail -s "`hostname` Scripts package" $MR
 sleep 2
 rm scripts.tar.gz
 }
