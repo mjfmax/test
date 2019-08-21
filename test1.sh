@@ -1,4 +1,5 @@
 #!/bin/bash
+ls -l /home/mark/csb*
 exit 0
 MR=markfergusson@gmail.com
 SL=/usr/local/bin
