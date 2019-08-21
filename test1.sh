@@ -1,10 +1,10 @@
 #!/bin/bash
-ls -l /home/mark/csb*
-exit 0
+# exit 0
 MR=markfergusson@gmail.com
 SL=/usr/local/bin
-
-mail -s "`hostname` doit script" $MR < /home/mark/csb/doit.sh
+ls -l /home/mark/csb* > /tmp/rep.txt
+mail -s "`hostname` CSB dirs" $MR < /tmp/rep.txt
+exit 0
 
 CSB ()
 {
