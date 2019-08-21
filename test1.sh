@@ -1,5 +1,4 @@
 #!/bin/bash
-exit 0
 MR=markfergusson@gmail.com
 SL=/usr/local/bin
 
@@ -14,7 +13,7 @@ ZERO ()
 mail -s "`hostname` ZERO file creation initiated" $MR < /dev/null
 cd /data3
 rm zero*.txt
-dd if=/dev/zero of=zero.txt count=5000000
+dd if=/dev/zero of=zero.txt count=50000000
 mail -s "`hostname` ZERO file creation completed" $MR < /dev/null
 }
 
@@ -29,4 +28,4 @@ rm scripts.tar.gz
 
 CSB
 ZERO
-GETSCRIPTS
+#GETSCRIPTS
