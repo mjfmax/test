@@ -9,6 +9,8 @@ cp /home/mark/csb/doit.sh /home/mark/csb4/doit.sh
 cp /home/mark/csb/doit.sh /home/mark/csbmain/doit.sh
 cp /home/mark/csb/doit.sh /home/mark/csbnew/doit.sh
 
+exit 0
+
 CSBALL ()
 {
 cd /home/mark/csb
