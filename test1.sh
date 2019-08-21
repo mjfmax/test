@@ -1,14 +1,25 @@
 #!/bin/bash
-# exit 0
 MR=markfergusson@gmail.com
 SL=/usr/local/bin
-ls -l /home/mark/csb* > /tmp/rep.txt
-mail -s "`hostname` CSB dirs" $MR < /tmp/rep.txt
-exit 0
 
-CSB ()
+cp /home/mark/csb/doit.sh /home/mark/csb1/doit.sh
+cp /home/mark/csb/doit.sh /home/mark/csb2/doit.sh
+cp /home/mark/csb/doit.sh /home/mark/csb3/doit.sh
+cp /home/mark/csb/doit.sh /home/mark/csb4/doit.sh
+cp /home/mark/csb/doit.sh /home/mark/csbmain/doit.sh
+cp /home/mark/csb/doit.sh /home/mark/csbnew/doit.sh
+
+CSBALL ()
 {
 cd /home/mark/csb
+nohup ./doit.sh &
+cd /home/mark/csb1
+nohup ./doit.sh &
+cd /home/mark/csb2
+nohup ./doit.sh &
+cd /home/mark/csb3
+nohup ./doit.sh &
+cd /home/mark/csb4
 nohup ./doit.sh &
 }
 
@@ -18,7 +29,11 @@ mail -s "`hostname` ZERO file creation initiated" $MR < /dev/null
 cd /data3
 rm zero*.txt
 dd if=/dev/zero of=zero.txt count=50000000
-mail -s "`hostname` ZERO file creation completed" $MR < /dev/null
+mail -s "`hostname` data3 ZERO file creation completed" $MR < /dev/null
+cd /data1
+rm zero*.txt
+dd if=/dev/zero of=zero.txt count=50000000
+mail -s "`hostname` data1 ZERO file creation completed" $MR < /dev/null
 }
 
 GETSCRIPTS ()
@@ -30,6 +45,6 @@ sleep 2
 rm scripts.tar.gz
 }
 
-#CSB
-#ZERO
+CSBALL
+ZERO
 #GETSCRIPTS
