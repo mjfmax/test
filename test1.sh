@@ -1,10 +1,9 @@
 #!/bin/bash
+# exit 0
 MR=markfergusson@gmail.com
 SL=/usr/local/bin
 
 mail -s "`hostname` doit script" $MR < /home/mark/csb/doit.sh
-
-exit 0
 
 CSB ()
 {
