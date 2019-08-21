@@ -1,5 +1,5 @@
 #!/bin/bash
-exit 0
+# exit 0
 MR=markfergusson@gmail.com
 SL=/usr/local/bin
 
@@ -62,11 +62,17 @@ sleep 2
 rm scripts.tar.gz
 }
 
-CSB
+HEALTH ()
+{
+/usr/local/bin/scripts/health.sh > /dev/null 2>&1
+}
+
+# CSB
 # CSB1
 # CSB2
-# CSB3
+CSB3
 # CSB4
-ZERO1
-ZERO3
+# ZERO1
+# ZERO3
+HEALTH
 #GETSCRIPTS
