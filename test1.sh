@@ -2,14 +2,6 @@
 MR=markfergusson@gmail.com
 SL=/usr/local/bin
 
-cp /home/mark/csb/doit.sh /home/mark/csb1/doit.sh
-cp /home/mark/csb/doit.sh /home/mark/csb2/doit.sh
-cp /home/mark/csb/doit.sh /home/mark/csb3/doit.sh
-cp /home/mark/csb/doit.sh /home/mark/csb4/doit.sh
-cp /home/mark/csb/doit.sh /home/mark/csbmain/doit.sh
-cp /home/mark/csb/doit.sh /home/mark/csbnew/doit.sh
-
-exit 0
 
 CSBALL ()
 {
