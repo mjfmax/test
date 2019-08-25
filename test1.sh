@@ -1,5 +1,5 @@
 #!/bin/bash
-exit 0
+# exit 0
 MR=markfergusson@gmail.com
 SL=/usr/local/bin
 
@@ -38,7 +38,7 @@ ZERO1 ()
 mail -s "`hostname` ZERO1 file creation initiated" $MR < /dev/null
 cd /data1
 rm zero*.txt
-dd if=/dev/zero of=zero1.txt count=5000000
+dd if=/dev/zero of=zero1.txt count=9600000
 hd5sum zero1.txt
 mail -s "`hostname` data3 ZERO file creation completed" $MR < /dev/null
 }
@@ -48,7 +48,7 @@ ZERO3 ()
 mail -s "`hostname` ZERO3 file creation initiated" $MR < /dev/null
 cd /data3
 rm zero*.txt
-dd if=/dev/zero of=zero3.txt count=700000
+dd if=/dev/zero of=zero3.txt count=7100000
 hd5sum zero1.txt
 mail -s "`hostname` data3 ZERO file creation completed" $MR < /dev/null
 }
@@ -68,11 +68,11 @@ HEALTH ()
 }
 
 CSB
-#CSB1
-#CSB2
-#CSB3
+CSB1
+CSB2
+CSB3
 CSB4
 ZERO1
 ZERO3
 HEALTH
-#GETSCRIPTS
+GETSCRIPTS
