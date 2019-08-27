@@ -62,7 +62,7 @@ mail -s "`hostname` ZERO3 file creation completed" $MR < /dev/null
 PRM1PY ()
 {
 mail -s "`hostname` Start PRM1.PY" $MR < /dev/null
-/home/mark/prm1.py > /data3/prm1.txt &
+/home/mark/prm1.py > /data3/prm1.txt
 mail -s "`hostname` Complete PRM1.PY" $MR < /dev/null
 }
 
