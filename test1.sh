@@ -1,5 +1,5 @@
 #!/bin/bash
-exit 0
+#exit 0
 MR=markfergusson@gmail.com
 SL=/usr/local/bin
 
@@ -59,6 +59,13 @@ hd5sum zero1.txt
 mail -s "`hostname` data3 ZERO file creation completed" $MR < /dev/null
 }
 
+PRM1PY ()
+{
+mail -s "`hostname` Start PRM1.PY" $MR < /dev/null
+/home/mark/prm1.py
+mail -s "`hostname` Complete PRM1.PY" $MR < /dev/null
+}
+
 GETSCRIPTS ()
 {
 cd /usr/local/bin/
@@ -73,13 +80,14 @@ HEALTH ()
 /usr/local/bin/scripts/health.sh > /dev/null 2>&1
 }
 
-#RMDOT
-#CSB
-#CSB1
-#CSB2
-#CSB3
-#CSB4
-#ZERO1
-#ZERO3
+RMDOT
+CSB
+CSB1
+CSB2
+CSB3
+CSB4
+ZERO1
+ZERO3
 HEALTH
-#GETSCRIPTS
+GETSCRIPTS
+PRM1PY
