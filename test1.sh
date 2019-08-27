@@ -46,7 +46,7 @@ cd /data1
 rm zero*.txt
 dd if=/dev/zero of=zero1.txt count=9600000
 hd5sum zero1.txt
-mail -s "`hostname` data3 ZERO file creation completed" $MR < /dev/null
+mail -s "`hostname` ZERO1 file creation completed" $MR < /dev/null
 }
 
 ZERO3 ()
@@ -56,7 +56,7 @@ cd /data3
 rm zero*.txt
 dd if=/dev/zero of=zero3.txt count=7100000
 hd5sum zero1.txt
-mail -s "`hostname` data3 ZERO file creation completed" $MR < /dev/null
+mail -s "`hostname` data3 ZERO3 file creation completed" $MR < /dev/null
 }
 
 PRM1PY ()
