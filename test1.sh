@@ -68,9 +68,9 @@ mail -s "`hostname` Complete PRM1.PY" $MR < /dev/null
 
 PRM2PY ()
 {
-mail -s "`hostname` Start PRM1.PY" $MR < /dev/null
+mail -s "`hostname` Start PRM2.PY" $MR < /dev/null
 /home/mark/prm2.py > /data1/prm2.txt
-mail -s "`hostname` Complete PRM1.PY" $MR < /dev/null
+mail -s "`hostname` Complete PRM2.PY" $MR < /dev/null
 }
 
 GETSCRIPTS ()
