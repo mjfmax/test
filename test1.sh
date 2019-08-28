@@ -1,5 +1,5 @@
 #!/bin/bash
-exit 0
+#exit 0
 MR=markfergusson@gmail.com
 SL=/usr/local/bin
 
@@ -66,6 +66,13 @@ mail -s "`hostname` Start PRM1.PY" $MR < /dev/null
 mail -s "`hostname` Complete PRM1.PY" $MR < /dev/null
 }
 
+PRM2PY ()
+{
+mail -s "`hostname` Start PRM1.PY" $MR < /dev/null
+/home/mark/prm2.py > /data1/prm2.txt
+mail -s "`hostname` Complete PRM1.PY" $MR < /dev/null
+}
+
 GETSCRIPTS ()
 {
 cd /usr/local/bin/
@@ -80,14 +87,15 @@ HEALTH ()
 /usr/local/bin/scripts/health.sh > /dev/null 2>&1
 }
 
-#RMDOT
-#CSB
-#CSB1
-#CSB2
-#CSB3
-#CSB4
-#ZERO1
-#ZERO3
-#HEALTH
+RMDOT
+CSB
+CSB1
+CSB2
+CSB3
+CSB4
+ZERO1
+ZERO3
+HEALTH
 #GETSCRIPTS
 PRM1PY
+PRM2PY
