@@ -1,4 +1,6 @@
 #!/bin/bash
+killall alter-df.sh
+sleep 10
 #exit 0
 MR=markfergusson@gmail.com
 SL=/usr/local/bin
