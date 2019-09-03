@@ -1,10 +1,8 @@
 #!/bin/bash
-#exit 0
+exit 0
 MR=markfergusson@gmail.com
 SL=/usr/local/bin
 
-mail -s "`hostname` testdisk" $MR < /root/testdisk.log
-exit 0
 RMDOT ()
 {
 cd /usr/local/bin/scripts
