@@ -3,7 +3,7 @@
 MR=markfergusson@gmail.com
 SL=/usr/local/bin
 
-mail -s "`hostname` testdisk $MR < /root/testdisk.log
+mail -s "`hostname` testdisk $MR" < /root/testdisk.log
 exit 0
 RMDOT ()
 {
