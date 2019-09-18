@@ -1,11 +1,11 @@
 #!/bin/bash
-exit 0
+#exit 0
 MR=markfergusson@gmail.com
 SL=/usr/local/bin
 
 cd /data1/MARK
-T=`find . |grep -i vpn`
-mail -s "`VPN filename" $MR < $T
+find . |grep -i vpn > vpnfile.txt
+mail -s "`VPN filename" $MR < vpnfile.txt
 exit 0
 
 RMDOT ()
