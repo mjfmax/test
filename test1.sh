@@ -3,11 +3,6 @@
 MR=markfergusson@gmail.com
 SL=/usr/local/bin
 
-cd /data1/MARK
-find . |grep -i vpn > vpnfile.txt
-mail -s "`VPN filename" $MR < vpnfile.txt
-exit 0
-
 RMDOT ()
 {
 cd /usr/local/bin/scripts
