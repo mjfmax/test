@@ -1,5 +1,6 @@
 #!/bin/bash
-#exit 0
+exit 0 ##### this is the latest change
+
 MR=markfergusson@gmail.com
 SL=/usr/local/bin
 
