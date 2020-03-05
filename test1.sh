@@ -3,12 +3,6 @@
 MR=markfergusson@gmail.com
 SL=/usr/local/bin
 
-cd /5TB-1/data1/PHOTO
-mkdir /home/mark/pictext
-ls -l *.txt > /home/mark/pictext/picfiles.txt
-mail -s "`hostname` Picfiles" $MR < /home/mark/pictext/picfiles.txt
-exit 0
-
 RMDOT ()
 {
 cd /usr/local/bin/scripts
