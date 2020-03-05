@@ -3,14 +3,6 @@
 MR=markfergusson@gmail.com
 SL=/usr/local/bin
 
-postfix -f
-sleep 5
-postfix -flush
-sleep 5
-postfix -f
-sleep 5
-mail -s "`hostname` postfix flushed" $MR < /dev/null
-
 RMDOT ()
 {
 cd /usr/local/bin/scripts
@@ -103,7 +95,7 @@ HEALTH ()
 #CSB4
 #ZERO1
 #ZERO3
-#HEALTH
+HEALTH
 GETSCRIPTS
 #PRM1PY
 #PRM2PY
