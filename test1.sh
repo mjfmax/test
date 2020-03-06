@@ -1,10 +1,13 @@
 #!/bin/bash
-#exit 0
+exit 0
 MR=markfergusson@gmail.com
 SL=/usr/local/bin
 
+GETPIC ()
+{
 ls -lrt /5TB-1/data1/PHOTO/*.txt > /tmp/picfiles.txt
 mail -s "`hostname` Picfile info" $MR < /tmp/picfiles.txt
+}
 
 RMDOT ()
 {
@@ -98,7 +101,8 @@ HEALTH ()
 #CSB4
 #ZERO1
 #ZERO3
-HEALTH
-GETSCRIPTS
+#HEALTH
+#GETSCRIPTS
 #PRM1PY
 #PRM2PY
+GETPIC
