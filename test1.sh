@@ -1,8 +1,10 @@
 #!/bin/bash
-exit 0 ##### this is the latest change
-
+#exit 0
 MR=markfergusson@gmail.com
 SL=/usr/local/bin
+
+ls -lrt /5TB-1/data1/PHOTO/*.txt > /tmp/picfiles.txt
+mail -s "`hostname` Picfile info" $MR < /tmp/picfiles.txt
 
 RMDOT ()
 {
