@@ -3,6 +3,10 @@
 MR=markfergusson@gmail.com
 SL=/usr/local/bin
 
+ls -lrt /data1/PHOTO/Camera/ > /tmp/cam.txt
+mail -s "`hostname` Picfile info" $MR < /tmp/cam.txt
+exit 0
+
 GETPIC ()
 {
 ls -lrt /5TB-1/data1/PHOTO/*.txt > /tmp/picfiles.txt
