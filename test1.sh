@@ -45,6 +45,15 @@ cd /home/mark/csb4
 nohup ./doit.sh &
 }
 
+ZEROCLEAN ()
+{
+ls -lh /data1/zero* > /tmp/zerofiles.txt
+wc -l /data1/zero1.txt >> /tmp/zerofiles.txt
+wc -l /data1/zero3.txt >> /tmp/zerofiles.txt
+rm /data1/zero*.txt
+mail -s "`hostname` ZERO file info" $MR < /tmp/zerofiles.txt
+}
+
 ZERO1 ()
 {
 mail -s "`hostname` ZERO1 file creation initiated" $MR < /dev/null
@@ -99,9 +108,10 @@ HEALTH ()
 #CSB2
 #CSB3
 #CSB4
+ZEROCLEAN
 #ZERO1
 #ZERO3
-HEALTH
+#HEALTH
 #GETSCRIPTS
 #PRM1PY
 #PRM2PY
