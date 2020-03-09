@@ -49,7 +49,7 @@ ZEROCLEAN ()
 {
 ls -lh /data1/zero* > /tmp/zerofiles.txt
 wc -l /data1/zero1.txt >> /tmp/zerofiles.txt
-wc -l /data1/zero3.txt >> /tmp/zerofiles.txt
+wc -l /data3/zero3.txt >> /tmp/zerofiles.txt
 rm /data1/zero*.txt
 mail -s "`hostname` ZERO file info" $MR < /tmp/zerofiles.txt
 }
