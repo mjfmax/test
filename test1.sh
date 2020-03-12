@@ -47,7 +47,8 @@ nohup ./doit.sh &
 
 ZEROCLEAN ()
 {
-ls -lh /data1/zero* > /tmp/zerofiles.txt
+ls -lm /data1/zero* > /tmp/zerofiles.txt
+ls -lm /data3/zero* >> /tmp/zerofiles.txt
 wc -l /data1/zero1.txt >> /tmp/zerofiles.txt
 wc -l /data3/zero3.txt >> /tmp/zerofiles.txt
 rm /data1/zero*.txt
@@ -109,7 +110,7 @@ HEALTH ()
 #CSB2
 #CSB3
 #CSB4
-#ZEROCLEAN
+ZEROCLEAN
 #ZERO1
 #ZERO3
 HEALTH
