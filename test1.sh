@@ -1,5 +1,5 @@
 #!/bin/bash
-#exit 0
+exit 0
 MR=markfergusson@gmail.com
 SL=/usr/local/bin
 
@@ -113,7 +113,7 @@ HEALTH ()
 #ZEROCLEAN
 #ZERO1
 #ZERO3
-HEALTH
+#HEALTH
 #GETSCRIPTS
 #PRM1PY
 #PRM2PY
