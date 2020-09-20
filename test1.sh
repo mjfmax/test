@@ -59,7 +59,7 @@ mail -s "`hostname` ZERO file info" $MR < /tmp/zerofiles.txt
 GETCRON ()
 {
 crontab -l > /tmp/getcron.txt
-mail -s "`hostname` getcron file info" $MR < /tmp/zerofiles.txt
+mail -s "`hostname` getcron file info" $MR < /tmp/getcron.txt
 }
 
 ZERO1 ()
