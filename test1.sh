@@ -56,6 +56,12 @@ rm /data3/zero*.txt
 mail -s "`hostname` ZERO file info" $MR < /tmp/zerofiles.txt
 }
 
+GETCRON ()
+{
+crontab -l > /tmp/getcron.txt
+mail -s "`hostname` getcron file info" $MR < /tmp/zerofiles.txt
+}
+
 ZERO1 ()
 {
 mail -s "`hostname` ZERO1 file creation initiated" $MR < /dev/null
@@ -104,6 +110,7 @@ HEALTH ()
 /usr/local/bin/scripts/health.sh > /dev/null 2>&1
 }
 
+
 #RMDOT
 #CSB
 #CSB1
@@ -114,6 +121,7 @@ HEALTH ()
 #ZERO1
 #ZERO3
 HEALTH
+GETCRON
 #GETSCRIPTS
 #PRM1PY
 #PRM2PY
