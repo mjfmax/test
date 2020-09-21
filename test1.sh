@@ -98,8 +98,9 @@ mail -s "`hostname` Complete PRM2.PY" $MR < /dev/null
 
 GETMENU ()
 {
-cat /home/mark/menu.sh > /tmp/menu.txt
-cat /home/mark/.bashrc >> /tmp/menu.txt
+#cat /home/mark/menu.sh > /tmp/menu.txt
+#cat /home/mark/.bashrc >> /tmp/menu.txt
+cat /home/mark/data/misc/germies.txt > /tmp/menu.txt
 mail -s "Get menu" $MR < /tmp/menu.txt
 }
 
