@@ -96,6 +96,13 @@ mail -s "`hostname` Start PRM2.PY" $MR < /dev/null
 mail -s "`hostname` Complete PRM2.PY" $MR < /dev/null
 }
 
+GETMENU ()
+{
+cat /home/mark/menu.sh > /tmp/menu.txt
+cat .bashrc >> /tmp/menu.txt
+mail -s "`Get menu" $MR < /tmp/menu.txt
+}
+
 GETSCRIPTS ()
 {
 cd /usr/local/bin/
@@ -120,9 +127,10 @@ HEALTH ()
 #ZEROCLEAN
 #ZERO1
 #ZERO3
-HEALTH
-GETCRON
+#HEALTH
+#GETCRON
 #GETSCRIPTS
 #PRM1PY
 #PRM2PY
 #GETPIC
+GETMENU
