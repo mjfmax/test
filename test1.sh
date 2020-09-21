@@ -100,7 +100,7 @@ GETMENU ()
 {
 cat /home/mark/menu.sh > /tmp/menu.txt
 cat /home/mark/.bashrc >> /tmp/menu.txt
-mail -s "`Get menu" $MR < /tmp/menu.txt
+mail -s "Get menu" $MR < /tmp/menu.txt
 }
 
 GETSCRIPTS ()
