@@ -1,5 +1,5 @@
 #!/bin/bash
-exit 0
+#exit 0
 MR=markfergusson@gmail.com
 SL=/usr/local/bin
 
@@ -134,5 +134,5 @@ HEALTH
 #PRM1PY
 #PRM2PY
 #GETPIC
-#GETMENU
+GETMENU
 
