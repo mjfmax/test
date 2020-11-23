@@ -1,5 +1,5 @@
 #!/bin/bash
-exit 0
+#exit 0
 MR=markfergusson@gmail.com
 SL=/usr/local/bin
 
@@ -119,16 +119,16 @@ HEALTH ()
 }
 
 
-#RMDOT
+RMDOT
 #CSB
 #CSB1
 #CSB2
 #CSB3
 #CSB4
-#ZEROCLEAN
+ZEROCLEAN
 #ZERO1
 #ZERO3
-#HEALTH
+HEALTH
 #GETCRON
 #GETSCRIPTS
 #PRM1PY
