@@ -23,6 +23,7 @@ nohup ./doit.sh &
 
 CSB1 ()
 {
+sleep 300
 cd /home/mark/csb1
 nohup ./doit.sh &
 }
@@ -41,6 +42,7 @@ nohup ./doit.sh &
 
 CSB4 ()
 {
+sleep 300
 cd /home/mark/csb4
 nohup ./doit.sh &
 }
